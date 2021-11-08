@@ -1,0 +1,9 @@
+Vi har två fall, 1 fall där talet x = 0 och ett fall för allt annat
+I fall x= 0 så returnerar vi 0 som sträng och avslutar algorithmen. 
+Annars har vi följande algorithm:
+Vi tar talet x och tar modulo 10 med talet.
+säg att vi har ett tal på formen abcd..k
+När vi delar det med 10 så för vi ett nytt tal abcd..j med rest k
+Denna rest görs sedan om till en sträng och konkateneras in i våran ordsträng 
+Denna process repeteras tills bara en siffra är kvar som vi konkatenerar med strängen
+Om sista siffran är 0 läggs denna inte till.

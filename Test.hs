@@ -1,8 +1,7 @@
-radius :: Int -> Int
-radius w = w
 squareArea :: Double -> Double
-squareArea z = z^2
-piVal = pi
-circleSquared c = c^2
+squareArea w = w^2
 circleArea :: Double -> Double
-circleArea c = piVal*c^2
+circleArea w = pi*w^2
+squareCircleArea w = squareArea (2*w) - circleArea w
+cathetus w = w / sqrt 2
+circleSquareArea w = circleArea w - squareArea (2*cathetus w)
